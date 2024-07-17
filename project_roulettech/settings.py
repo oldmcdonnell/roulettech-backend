@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist'
 ]
 
-CORS_ALLOWED_ORIGINS = ['http://localhost:3080']
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
 
 CORS_ALLOW_METHODS = [
     'GET',
