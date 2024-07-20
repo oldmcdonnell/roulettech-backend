@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-h^rc0u^%4ky94lp^cdopel3c-u&^0mf+j-$yytn_$5km)hajcv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '060211867096-roulettech.s3-website.us-east-1.amazonaws.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -44,7 +48,10 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist'
 ]
 
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://060211867096-roulettech.s3-website.us-east-1.amazonaws.com'
+    ]
 
 CORS_ALLOW_METHODS = [
     'GET',
